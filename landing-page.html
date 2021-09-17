@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Landing Page</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/landing-page.css">
+        <link rel="stylesheet" href="./css/transition.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    </head>
+    <body onload="loadFunction()">
+        <main>
+            <div id="page-transition" class="transition-active"></div>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./resources/landing-page.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="text-container">
+                <h1>Yasir M Dahir</h1>
+                <p>Computer Science Student at QMUL</p>
+                <p>Mathematics Tutor</p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/yasir-dahir-0b54451b8/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/ydairz" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+                <a class="explore-button" href="javascript:nextFunction('./index.php')">Explore</a>
+            </div>
+        </main>
+    </body>
+    <script src="main.js"></script>
+</html>

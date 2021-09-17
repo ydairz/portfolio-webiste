@@ -1,0 +1,131 @@
+body {
+    background-color: var(--colour-black);
+}
+
+/* ========================================================== NAVBAR ========================================================== */
+
+.navbar {
+    background-color: #141516;
+    padding: 0 2em 0 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar ul li {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    border: 0.25em solid #141516;
+    color: #FFFFFF;
+}
+
+.navbar ul li:first-child {
+    position: fixed;
+    float: left;
+    border: none;
+}
+
+.navbar ul li a {
+    color: var(--colour-white);
+}
+
+.navbar ul li a:hover {
+    color: var(--colour-white-hover);
+    transition: 0.5s ease;
+}
+
+/* ======================================================= BACKGROUND IMAGE ======================================================= */
+
+.image-container {
+    background-image: url(../resources/login.jpg);
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======================================================== LOGIN SECTION ======================================================== */
+
+.login {
+    width: 40%;
+    min-width: 30em;
+    max-width: 40em;
+    background-color: #FFF6F2;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1.125em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.login h1 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--colour-blue-hover);
+}
+
+.login p {
+    text-align: center;
+}
+
+.error-message {
+    color: #FF2020;
+}
+
+form {
+    border-bottom: 0.075em solid #000000;
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 0.075em solid #000000;
+}
+
+form label, form input {
+    margin: 0.25em 12.5%;
+}
+
+form input {
+    display: block;
+    width: 75%;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1em;
+}
+
+input:focus {
+    background-color: #F9F9F9;
+}
+
+form button {
+    display: block;
+    margin: 2em auto 1em auto;
+    background-color: var(--colour-blue);
+    color: var(--colour-black);
+    padding: 0.75em 2em;
+    text-align: center;
+    border: 0.05em solid var(--colour-black);
+    border-radius: 0.25em;
+    outline: none;
+    
+}
+
+form button:hover {
+    background-color: var(--colour-blue-hover);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+    .login {
+        min-width: 90%;
+    }
+}

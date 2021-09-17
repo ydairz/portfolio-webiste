@@ -1,0 +1,507 @@
+body {
+  background-color: var(--colour-black);
+}
+
+main {
+  margin-top: 4em;
+}
+
+/* ========================================================= HERO SECTION ========================================================= */
+
+.parallax {
+  background-image: url(../resources/hero.jpg);
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.hero-text-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-container h1, .hero-text-container p {
+  color: var(--colour-white);
+}
+
+/* =========================================================== ARTICLES =========================================================== */
+
+article {
+  background-image: linear-gradient(180deg, var(--colour-beige), var(--colour-white));
+}
+
+article h1 {
+  color: var(--colour-blue-hover);
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.heading-2 {
+  display: none;
+}
+
+.row {
+  display: flex;
+  margin: 0 7.5%;
+}
+
+.column {
+  width: 50%;
+  margin: 2%;
+}
+
+@media screen and (max-width: 760px) {
+  .heading-1 {
+    display: none;
+  }
+
+  .heading-2 {
+    display: block;
+  }
+  
+  .row {
+    display: block;
+    margin: 0 5%;
+  }
+  
+  .column {
+    width: 100%;
+    margin: 1%;
+  }
+}
+
+/* ======================================================= ABOUT ME SECTION ======================================================= */
+
+.about-me {
+  padding: 2%;
+}
+
+.about-me div h3 {
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.about-me div p {
+  margin: 0 5% 0 5%;
+}
+
+.about-me figure {
+  margin: 0 auto;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  min-width: 20em;
+  width: 50%;
+  border-radius: 100%;
+  background-color: #FFF6F2;
+}
+
+.about-me figure img {
+  border: 0.05em solid var(--colour-black);
+  border-radius: 100%;
+}
+
+.links {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+
+.links a {
+  color: var(--colour-black);
+  margin: 0 0.5em;
+}
+
+.links a:hover i {
+  color: var(--colour-white-hover);
+  transform: scale(1.25);
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 760px) {
+  .about-me figure {
+    min-width: 15em;
+    width: 50%;
+  }
+}
+
+/* =========================================================== SKILLS =========================================================== */
+
+.parallax-2 {
+  background-image: url(../resources/skills.jpg);
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+
+.skills-content {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75em;;
+}
+
+.skills-content p {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto 2em auto;
+  color: var(--colour-white);
+}
+
+.skills-content h3 {
+  font-weight: var(--font-weight-large);
+  text-align: center;
+  color: var(--colour-white);
+}
+
+.skills-content .row {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  color: var(--colour-white);
+}
+
+.column-3 {
+  text-align: center;
+  width: 33.3%;
+}
+
+.column-5 {
+  text-align: center;
+  width: 20%;
+}
+
+.column-5 i {
+  margin-bottom: 0.125em;
+}
+
+#skills-row p {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#skills-row div:hover p {
+  visibility: visible;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+@media screen and (max-width: 760px) {
+  .column-3 {
+    width: 100%;
+  }
+
+  .skills-content p {
+    width: 90%;
+  }
+
+  .skills-content .row {
+    width: 90%;
+  }
+
+  #skills-row {
+    display: none;
+  }
+}
+
+/* ========================================================== EDUCATION ========================================================== */
+
+.education {
+  padding: 2%;
+}
+
+.education table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.education table tr td {
+  width: 75%;
+}
+
+.education table tr td:first-child {
+  width: 25%;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.education table tr h2 {
+  font-size: var(--h3-size);
+  font-weight: var(--font-weight-large);
+}
+
+@media screen and (max-width: 760px) {
+  .education table {
+    width: 100%;
+  }
+}
+
+/* ========================================================== PROJECTS ========================================================== */
+
+.parallax-3 {
+  background-image: url(../resources/projects.jpg);
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+
+.projects-content {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75em;;
+}
+
+.projects-content p, .projects-content h3, .projects-content a {
+  color: var(--colour-white);
+}
+
+.projects-content h3 {
+  text-align: center;
+  font-weight: var(--font-weight-large);
+}
+
+.projects-content figcaption {
+  text-align: center;
+  color: var(--colour-white);
+}
+
+/* ========================================================= EXPERIENCES ========================================================= */
+
+.experiences {
+  padding: 2%;
+}
+
+.experiences table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.experiences table tr td {
+  width: 75%;
+}
+
+.experiences table tr td:first-child {
+  width: 25%;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.experiences table tr td h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--font-weight-large);
+}
+
+@media screen and (max-width: 760px) {
+  .experiences table {
+    width: 100%;
+  }
+}
+
+/* ============================================================ BLOG ============================================================ */
+
+.parallax-4 {
+  background-image: url(../resources/blog.jpg);
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+
+.blog-content {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75em;;
+  padding: 0 2% 2% 2%;
+}
+
+.blog-content h2 {
+  color: var(--colour-white);
+  font-weight: var(--font-weight-large);
+  padding-bottom: 0.5em;
+  border-bottom: 0.05em solid var(--colour-white);
+}
+
+.blog-buttons {
+  float: right;
+}
+
+.blog-buttons a {
+  color: var(--colour-white);
+  margin: 0 0.5em;
+}
+
+.blog-buttons a:hover i {
+  color: var(--colour-white-hover);
+  transform: scale(1.25);
+  transition: 0.5s ease;
+}
+
+.blog-content section {
+  display: none;
+  background-color: var(--colour-beige);
+  padding: 2%;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.blog-content section h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.blog-content section p {
+  text-align: center;
+}
+
+form label, form input, form textarea {
+  margin: 0.25em 25%;
+}
+
+form textarea {
+  resize: none;
+}
+
+form input, form textarea {
+  display: block;
+  width: 50%;
+  padding: 0.25em 0.5em;
+  margin-bottom: 1em;
+}
+
+form input:focus, form textarea:focus {
+  background-color: #F9F9F9;
+}
+
+form button {
+  display: block;
+  margin: 2em auto 1em auto;
+  background-color: var(--colour-blue);
+  color: var(--colour-black);
+  padding: 0.75em 2em;
+  text-align: center;
+  border: 0.05em solid var(--colour-black);
+  border-radius: 0.25em;
+  outline: none;
+  
+}
+
+form button:hover {
+  background-color: var(--colour-blue-hover);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.blog-post {
+  background-color: var(--colour-beige);
+  padding: 0.5em;
+  border: 0.05em solid var(--colour-black);
+  border-radius: 0.5em;
+  margin: 0.25em 0;
+}
+
+.blog-post h3 {
+  font-weight: var(--font-weight-large);
+}
+
+.blog-post .date {
+  float: right;
+  margin-left: 1em;
+}
+
+.blog-post p {
+  max-height: 3em;
+  overflow: hidden;
+}
+
+.blog-post:hover {
+  transform: scale(1.015);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.no-posts {
+  text-align: center;
+  color: var(--colour-white);
+  padding: 2em 0;
+}
+
+@media screen and (max-width: 760px) {
+  form label, form input, form textarea {
+    margin: 0.25em 10%;
+  }
+
+  form input, form textarea {
+    width: 80%;
+  }
+
+  .blog-content h2, .blog-buttons {
+    text-align: center;
+  }
+  
+  .blog-buttons {
+    float: none;
+  }
+}
+
+/* =========================================================== FOOTER =========================================================== */
+
+footer {
+  background-color: #141516;
+  padding: 1em 0 1em 0;
+}
+
+footer p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+footer div {
+  display: block;
+  text-align: center;
+  padding: 1em;
+}
+
+footer div a {
+  color: var(--colour-white);
+  margin: 0 0.5em;
+}
+
+footer div a:hover i {
+  color: var(--colour-white-hover);
+  transform: scale(1.25);
+  transition: 0.5s ease;
+}
+
+/* ===================================================== LOGGED IN NOTIFICATION ===================================================== */
+
+.notification {
+  background-color: var(--colour-beige);
+  position: fixed;
+  min-width: 12.5em;
+  width: 20%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  z-index: 1;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 0.05em solid #141516;
+  pointer-events: none;
+}
+
+.notification i.fa-check-circle, .notification i.fa-paper-plane {
+  color: #5fff50;
+}
+
+.notification i.fa-times-circle {
+  color: var(--colour-red);
+}
+

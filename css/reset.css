@@ -1,0 +1,82 @@
+/* ======================================================== UNIVERSAL CSS ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500&display=swap');
+
+:root {
+  --colour-white: #F2E9E9;
+  --colour-white-hover: #B4AEAE;
+  --colour-beige: #FFF6F2;
+  --colour-black: #141516;
+  --colour-blue: #50ABFF;
+  --colour-blue-hover: #188FFF;
+  --colour-red: #FF2020;
+  --font: 'Poppins', sans-serif;
+  --h1-size: 4em;
+  --h2-size: 2em;
+  --h3-size: 1.25em;
+  --default-size: 1em;
+  --font-weight-regular: 300;
+  --font-weight-medium: 400;
+  --font-weight-large: 500; 
+}
+
+/* =========================================================== RESET =========================================================== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, main, nav, h1, h2, h3, p, a, ul, ol, li, figure, figcaption, article, section, footer {
+  border: none;
+  vertical-align: baseline;
+  font-family: var(--font);
+  font-size: var(--default-size);
+  color: var(--colour-black);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--font-weight-large);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--font-weight-medium);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--font-weight-regular);
+}
+
+ul, ol {
+  list-style: none;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font);
+  color: var(--colour-black);
+}
