@@ -16,7 +16,6 @@
     <body onload="loadFunction()">
         <?php include "./navbar.php"; ?>
         <main>
-            <div id="page-transition" class="transition-active"></div>
             <?php
                 // A little popup appears to inform that the user has logged in, logged out or posted a blog.
                 if (isset($_SESSION["posted"]) && $_SESSION["posted"] == true) {

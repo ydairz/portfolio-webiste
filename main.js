@@ -1,32 +1,3 @@
-/* ===================================================== PAGE TRANSITIONS ===================================================== */
-
-function loadFunction() {
-    let transition = document.getElementById("page-transition");
-    setTimeout(function(){
-        transition.className = "transition-inactive";
-    }, 250);
-    if (document.getElementById("notification") != null) {
-        let element = document.getElementById("notification");
-        element.style.top = "20%";
-        element.style.transition = "1s ease";
-        setTimeout(function(){
-            element.style.top = 0;
-            element.style.transition = "1s ease-out";
-        }, 3000);
-        setTimeout(function(){
-            element.style.display = "none";
-        }, 5000);
-    }
-}
-
-function nextFunction(link) {
-    let transition = document.getElementById("page-transition");
-    transition.className = "transition-active";
-    setTimeout(function(){
-        window.location.href = link;
-    }, 250);
-}
-
 /* ======================================================== INDEX PAGE ======================================================== */
 
 function displayList() {
