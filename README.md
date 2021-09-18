@@ -3,8 +3,8 @@ A simplistic website created utilising the fundamentals of web development. A mi
 
 [Click here to access the website.](http://yasir-portfolio.42web.io/index.php)
 
-## Styling
+# Styling
 The website functions responsively for all devices - utilising columns and rows that rearrange themselves depending on the width of the screen. No frameworks were used to make the page as responsive as possible.
 
-## Blog functionality
+# Blog functionality
 The blog sections is viewable to any user that access the website. The main page showcases the 5 most recent blog posts. To see all blog posts, the user can nagitave to the blog archive page where the blog posts are showcases all posts, in the order of most-recent first. However, adding new blog posts is ownly available to administrators (where the user must be logged into the system). The blog functionaly of the website was created using vanilla PHP and MySQL.
