@@ -1,7 +1,7 @@
 # Portfolio Website
 A simplistic website created utilising the fundamentals of web development. A mixture of HTML, CSS, JavaScript, PHP was used to create this website (and MySQL to add blog functionality). The aim of this project was to not only to highlight some of the key achievements throughout my life but to also showcase my skills in web development. The project intially started as a static website (using a combination of HTML, CSS and JavaScript) but eventually evolved into a dynamic website with a fully functional blog (created using a combination of PHP and MySQL database).
 
-[Click here to access the website.](http://yasir-portfolio.42web.io/index.php)
+[Click here to navigate to the website!](http://yasir-portfolio.42web.io/index.php)
 
 # Styling
 The website functions responsively for all devices - utilising columns and rows that rearrange themselves depending on the width of the screen. No frameworks were used to make the page as responsive as possible.
