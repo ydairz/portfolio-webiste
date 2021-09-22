@@ -6,7 +6,7 @@ A simplistic website created utilising the fundamentals of web development. A mi
 # Styling
 The website functions responsively for all devices - utilising columns and rows that rearrange themselves depending on the width of the screen. No frameworks were used to make the page as responsive as possible.
 
-Some of the media, in the resource folder, were obtained from [Pexels](pexels.com).
+Some of the media, in the resource folder, were obtained from [Pexels](https://pexels.com).
 
 # Blog functionality
 The blog sections is viewable to any user that access the website. The main page showcases the 5 most recent blog posts. To see all blog posts, the user can nagitave to the blog archive page where the blog posts are showcases all posts, in the order of most-recent first. However, adding new blog posts is ownly available to administrators (where the user must be logged into the system). The blog functionaly of the website was created using vanilla PHP and MySQL.
